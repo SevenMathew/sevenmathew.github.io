@@ -15,34 +15,14 @@
   Padding: 10px 10px;
 }
 </style>
-<script>
-var urlParams;
-(window.onpopstate = function () {
-    var match,
-        pl     = /\+/g,  // Regex for replacing addition symbol with a space
-        search = /([^&=]+)=?([^&]*)/g,
-        decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
-        query  = window.location.search.substring(1);
-
-    urlParams = {};
-    while (match = search.exec(query))
-       urlParams[decode(match[1])] = decode(match[2]);
-})();
-var durl=urlParams["durl"];
-var purl=urlParams["purl"];
-</script>
 </head>
 <body>
 
 <div class="flockerhead">Like To Download</div>
 <div class="flockerbody">
-<script>
-document.write('<div id="locker" class="fb-like" data-href="'+purl+'" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>');
-</script>
+<div id="locker" class="fb-like" data-href="https://www.facebook.com/BTemplatesco" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
 <div id='locked' style='display:none;'>
-<script>
-document.write('<a class="btn-icon download" href="'+durl+'" target="_blank">Download</a>');
-</script>
+<a class="btn-icon download" href="https://sites.google.com/site/btemplatesco/7Mag.xml?attredirects=0&d=1" target="_blank">Download</a>
 </div>
 </div>
 <div id="fb-root"></div>
